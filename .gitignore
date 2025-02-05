@@ -161,3 +161,4 @@ cython_debug/
 
 instruction_create_class.txt
 instruction_create_class.md
+log.txt

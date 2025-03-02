@@ -17,7 +17,31 @@
 
 
 class Shape:
-    pass
+    def __init__(self, name: str):
+        self.name = name
+
+    def area(self) -> float:
+        return 0
+
+
+class Rectangle(Shape):
+    def __init__(self, name: str, width: float, height: float):
+        super().__init__(name)
+        self.width = width
+        self.height = height
+
+    def area(self) -> float:
+        return self.width * self.height
+
+
+class Triangle(Shape):
+    def __init__(self, name: str, base: float, height: float):
+        super().__init__(name)
+        self.base = base
+        self.height = height
+
+    def area(self) -> float:
+        return 0.5 * self.base * self.height
 
 
 # код для проверки 
